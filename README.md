@@ -1,3 +1,3 @@
-# Potentiometer Board
-An edge board containing two potentiometers, two bar graph leds and two buttons
+# 5up Digital Input Board
+An edge board containing five opto isolated inputs.  All inputs are active HIGH
 
