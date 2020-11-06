@@ -1,0 +1,6 @@
+
+*.ini
+cad_files/fp-info-cache
+cad_files/GENERIC_CAN-rescue.lib
+cad_files/OPTO-INPUT.net
+cad_files/sym-lib-table
