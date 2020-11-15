@@ -8,7 +8,7 @@ import utime
 print("starting digital input x5 board test")
 print("v1.0")
 print("initializing")
-can = CAN(1, CAN.LOOPBACK)
+can = CAN(1, CAN.NORMAL)
 can.setfilter(0, CAN.LIST16, 0, (123, 124, 125, 126))
 
 
@@ -57,20 +57,29 @@ def chk_buttons():
         
 
 def send():
-    can.send('message!', 123)   # send a message with id 123
+    can.send('EVZRTEST', 123)   # send a message with id 123
     
 def get():
     mess = can.recv(0)
     print(mess)
+    blink_fast()
         
-
+def blink_fast():
+    for i in range(100):
+        hbt_led.value(1)
+        utime.sleep_ms(50)
+        hbt_led.value(0)
+        utime.sleep_ms(50)
       
 while True:
     chk_hbt()
     if not (func_butt.value()):
         print("function button")
         utime.sleep_ms(200)
+        blink_fast()
     
+    if(can.any(0)):
+        get()
     
     
     if not (input_a.value()):
