@@ -15,6 +15,8 @@ can.setfilter(0, CAN.LIST16, 0, (123, 124, 125, 126))
 #Setup Pins
 hbt_led = Pin("D5", Pin.OUT)
 func_butt = Pin("E7", Pin.IN, Pin.PULL_UP) 
+can_wakeup = Pin("D6", Pin.OUT)
+can_wakeup.value(0) 
 
 input_a = Pin("D1", Pin.IN)
 input_b = Pin("E2", Pin.IN)
@@ -75,8 +77,8 @@ while True:
     chk_hbt()
     if not (func_butt.value()):
         print("function button")
-        blink_fast()
         send()
+        blink_fast()
         utime.sleep_ms(200)
     
     if(can.any(0)):
@@ -98,8 +100,3 @@ while True:
     if not (input_e.value()):
         print("input_e triggered")
         utime.sleep_ms(200)
-        
-    
-    
-    
-    
