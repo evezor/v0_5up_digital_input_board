@@ -75,8 +75,9 @@ while True:
     chk_hbt()
     if not (func_butt.value()):
         print("function button")
-        utime.sleep_ms(200)
         blink_fast()
+        send()
+        utime.sleep_ms(200)
     
     if(can.any(0)):
         get()
