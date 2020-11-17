@@ -65,7 +65,7 @@ def get():
     blink_fast()
         
 def blink_fast():
-    for i in range(100):
+    for i in range(30):
         hbt_led.value(1)
         utime.sleep_ms(50)
         hbt_led.value(0)
