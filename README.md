@@ -5,17 +5,17 @@ An edge board containing five opto isolated inputs.  All inputs are active HIGH.
 
 If I were to do this again, I would probably make a jumper that can switch between the 5v and whatever the bus voltage was. 
 
-![sm]()
+![sm](https://github.com/evezor/v0_5up_digital_input_board/blob/master/pics/sm.PNG)
 
-![sm2]()
+![sm2](https://github.com/evezor/v0_5up_digital_input_board/blob/master/pics/sm2.PNG)
 
-![front]()
+![front](https://github.com/evezor/v0_5up_digital_input_board/blob/master/pics/front.PNG)
 
-![back]()
+![back](https://github.com/evezor/v0_5up_digital_input_board/blob/master/pics/back.PNG)
 
-![copper]()
+![copper](https://github.com/evezor/v0_5up_digital_input_board/blob/master/pics/copper.PNG)
 
-![sch]()
+![sch](https://github.com/evezor/v0_5up_digital_input_board/blob/master/cad_files/OPTO-INPUT.svg)
 
 
 source files can be found here: https://github.com/evezor/v0_5up_digital_input_board
